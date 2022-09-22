@@ -1,0 +1,25 @@
+Source: node-seedrandom
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper (>= 9)
+ , dh-buildinfo
+ , nodejs
+Standards-Version: 4.1.0
+Homepage: http://davidbau.com/archives/2010/01/30/random_seeds_coded_hints_and_quintillions.html
+Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-seedrandom.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-seedrandom.git
+
+Package: node-seedrandom
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: Seeded random number generator for Javascript
+ Can be used as a plain script, a Node.js module or an AMD module. It includes
+ many PRNG alogorithms like alea, xor128, tychei, xorwow, xor4096, xorshift7,
+ and quick.
+ .
+ Node.js is an event-based server-side JavaScript engine.
