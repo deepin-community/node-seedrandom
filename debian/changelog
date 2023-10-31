@@ -1,9 +1,37 @@
-node-seedrandom (2.4.3+dfsg-1.1) unstable; urgency=medium
+node-seedrandom (2.4.4+dfsg+~2.4.30-1) unstable; urgency=medium
 
-  * Non maintainer upload by the Reproducible Builds team.
-  * No source change upload to rebuild on buildd with .buildinfo files.
+  * Team upload
 
- -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 04:01:37 +0100
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from deprecated 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Update standards version to 4.1.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-seedrandom: Add Multi-Arch: foreign.
+
+  [ Yadd ]
+  * Bump debhelper from old 12 to 13.
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop nodejs dependency
+  * Embed typescript declarations
+  * Exclude minified files from import
+  * Use dh-sequence-nodejs auto install
+  * New upstream version 2.4.4+dfsg+~2.4.30
+  * Update copyright
+  * Build minified files using uglifyjs
+
+ -- Yadd <yadd@debian.org>  Fri, 10 Dec 2021 18:29:23 +0100
 
 node-seedrandom (2.4.3+dfsg-1) unstable; urgency=low
 
